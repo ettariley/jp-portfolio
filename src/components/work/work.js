@@ -4,8 +4,8 @@ import './work.css';
 
 function Work() {
   return (
-    <Container fluid className='work'>
-        This is the work page.
+    <Container className='work'>
+      <h2 className='pt-3'>Work</h2>
     </Container>
   );
 }
