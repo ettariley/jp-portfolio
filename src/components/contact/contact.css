@@ -1,7 +1,38 @@
 .contact {
-  /* background-color: #0d3655;
-  color: white; */
-  min-height: 90vh;
   align-items: center;
   text-align: center;
+}
+
+.aci:hover {
+  text-decoration: none;
+}
+
+.bi-geo-alt-fill:hover {
+  color: white;
+}
+
+
+.aci {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-form {
+  background-color:#72b7a3;
+}
+
+.form-control {
+  background-color: white;
+}
+
+.form-control:focus {
+  background-color: white;
+}
+
+.contact-button:hover {
+  color: #72b7a3;
+}
+
+.contact-modal {
+  color: rgba(0, 0, 0, 0.9);
 }
