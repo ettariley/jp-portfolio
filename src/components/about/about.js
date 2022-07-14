@@ -4,8 +4,8 @@ import './about.css';
 
 function About() {
   return (
-    <Container fluid className='about'>
-        This is the about page.
+    <Container className='about'>
+      <h2 className='pt-3'>About</h2>
     </Container>
   );
 }
