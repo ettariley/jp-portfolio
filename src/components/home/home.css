@@ -1,7 +1,4 @@
 .home {
-  /* background-color: #0d3655;
-  color: white; */
-  min-height: 90vh;
   align-items: center;
   text-align: center;
 }
@@ -21,11 +18,7 @@
   padding-bottom: 10px;
 }
 
-.bi {
+.hi {
   color: 	#cbdcea;
   font-size: 45px;
-}
-
-.bi:hover {
-  color: #72b7a3;
 }
