@@ -1,6 +1,26 @@
 .footer {
-  /* background-color: #cbdcea; */
+  background-color: #cbdcea;
+  color: rgba(0, 0, 0, 0.9);
   text-align: center;
   justify-content: center;
-  height: 10vh;
+}
+
+a:hover {
+  color:#72b7a3;
+}
+
+.fi {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.fi-inline {
+  font-size: 1em;
+}
+
+.footer-row {
+  padding: 5px;
+}
+
+.footer-icons {
+  padding: 5px;
 }
