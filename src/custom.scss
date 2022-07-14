@@ -5,5 +5,9 @@ $body-bg: #0d3655;
 $body-color: white;
 $headings-font-family: 'Montserrat Alternates', sans-serif;
 
+.bi:hover {
+  color: #72b7a3;
+}
+
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
