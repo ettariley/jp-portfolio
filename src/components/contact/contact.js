@@ -21,7 +21,7 @@ function Contact() {
   return (
     <Container className='contact'>
       <h2 className='pt-3'>Contact</h2>
-      <p className='pb-3 fs-6'>Think we would work well together? Let me know!</p>
+      <p className='pb-3 fs-5'>Think we would work well together? Let me know!</p>
       <Row>
         {/* Contact deatils */}
         <Column md='6'>
@@ -30,12 +30,12 @@ function Contact() {
           </Row>
           <Row>
             <p>
-              <a href='mailto:ettahaselden@gmail.com' title='Email Me' target="_blank" className='aci fs-5'><i className="bi bi-envelope-fill ci"></i> Send me an email</a>
+              <a href='mailto:ettahaselden@gmail.com' title='Email Me' target="_blank" className='aci fs-5'><i className="bi bi-envelope-fill ci"></i> Send me an email (ettahaselden@gmail.com)</a>
             </p>
           </Row>
           <Row>
             <p>
-              <a href='tel:423-438-7569' title='Call Me' className='aci fs-5'><i className="bi bi-telephone-fill ci"></i> Give me a call</a>
+              <a href='tel:423-438-7569' title='Call Me' className='aci fs-5'><i className="bi bi-telephone-fill ci"></i> Give me a call (423-438-7569)</a>
             </p>
           </Row>
         </Column>
