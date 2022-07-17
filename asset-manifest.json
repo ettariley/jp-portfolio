@@ -1,16 +1,27 @@
 {
   "files": {
-    "main.css": "/jp-portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/jp-portfolio/static/js/main.70bd44b8.js",
+    "main.css": "/jp-portfolio/static/css/main.d010c2a4.css",
+    "main.js": "/jp-portfolio/static/js/main.bbf3a056.js",
     "static/js/787.d5b19316.chunk.js": "/jp-portfolio/static/js/787.d5b19316.chunk.js",
-    "static/media/logo.svg": "/jp-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/Screenshot_EMDB Movies_Case Study.png": "/jp-portfolio/static/media/Screenshot_EMDB Movies_Case Study.2b54088786371220779f.png",
+    "static/media/Live_Free_Screenshot.png": "/jp-portfolio/static/media/Live_Free_Screenshot.980a4bc72568e537c28c.png",
+    "static/media/Etta_Haselden_Resume.pdf": "/jp-portfolio/static/media/Etta_Haselden_Resume.1f22119f777e03f4f269.pdf",
+    "static/media/JP_Portfolio_Screenshot.png": "/jp-portfolio/static/media/JP_Portfolio_Screenshot.e9d1854beae18f3c85c2.png",
+    "static/media/Postman_Screenshot_Case Study.png": "/jp-portfolio/static/media/Postman_Screenshot_Case Study.beb2856a2cb00556f576.png",
+    "static/media/First_Portfolio_Screenshot.png": "/jp-portfolio/static/media/First_Portfolio_Screenshot.1cf7623b248fbfcb580a.png",
+    "static/media/headshot.jpg": "/jp-portfolio/static/media/headshot.f664d756420fa0f05882.jpg",
+    "static/media/Chat_Screenshot.png": "/jp-portfolio/static/media/Chat_Screenshot.7d51b43b93710e156325.png",
+    "static/media/Meet_Screenshot.png": "/jp-portfolio/static/media/Meet_Screenshot.00285376af38786f3cb7.png",
+    "static/media/Screenshot_EMDB Login_Case Study.png": "/jp-portfolio/static/media/Screenshot_EMDB Login_Case Study.01f80ef334802de56f97.png",
+    "static/media/Pokedex_Screenshot.png": "/jp-portfolio/static/media/Pokedex_Screenshot.cbae0a166b8cee390939.png",
+    "static/media/To_Do_List_Screenshot.png": "/jp-portfolio/static/media/To_Do_List_Screenshot.59189e5e112b297f332e.png",
     "index.html": "/jp-portfolio/index.html",
-    "main.073c9b0a.css.map": "/jp-portfolio/static/css/main.073c9b0a.css.map",
-    "main.70bd44b8.js.map": "/jp-portfolio/static/js/main.70bd44b8.js.map",
+    "main.d010c2a4.css.map": "/jp-portfolio/static/css/main.d010c2a4.css.map",
+    "main.bbf3a056.js.map": "/jp-portfolio/static/js/main.bbf3a056.js.map",
     "787.d5b19316.chunk.js.map": "/jp-portfolio/static/js/787.d5b19316.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.70bd44b8.js"
+    "static/css/main.d010c2a4.css",
+    "static/js/main.bbf3a056.js"
   ]
 }
