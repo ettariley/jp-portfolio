@@ -18,12 +18,12 @@ function App() {
     <Container fluid className="App d-flex flex-column justify-content-end">
       <NavMenu className="Nav" />
       <Routes>
-        <Route index path="/" element={<Home />} />
+        {/* <Route index path="/" element={<Home />} /> */}
         <Route index path="jp-portfolio" element={<Home />} />
-        <Route path="work" element={<Work />} />
-        <Route path="case-study" element={<CaseStudy />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
+          <Route path="work" element={<Work />} />
+          <Route path="case-study" element={<CaseStudy />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
       </Routes>
       <Footer className="footer" />
     </Container>
