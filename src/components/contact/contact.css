@@ -11,7 +11,6 @@
   color: white;
 }
 
-
 .aci {
   color: white;
   text-decoration: none;
@@ -29,8 +28,8 @@
   background-color: white;
 }
 
-.contact-button:hover {
-  color: #72b7a3;
+.contact-btn:hover {
+  color:#72b7a3;
 }
 
 .contact-modal {
