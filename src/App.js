@@ -1,10 +1,8 @@
 import React from 'react';
 import {
-  BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
-// import './App.css';
 import Container from 'react-bootstrap/Container';
 import NavMenu from './components/navmenu/navmenu';
 import Home from './components/home/home';
@@ -19,16 +17,14 @@ function App() {
   return (
     <Container fluid className="App d-flex flex-column justify-content-end">
       <NavMenu className="Nav" />
-      <BrowserRouter>
-        <Routes>
-          <Route index path="/" element={<Home />} />
-          <Route index path="/jp-portfolio" element={<Home />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/case-study" element={<CaseStudy />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route index path="/" element={<Home />} />
+        <Route index path="jp-portfolio" element={<Home />} />
+        <Route path="work" element={<Work />} />
+        <Route path="case-study" element={<CaseStudy />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
       <Footer className="footer" />
     </Container>
   );
