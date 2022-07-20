@@ -10,7 +10,7 @@ const workInfo = [
     ],
     description: 'I created this portfolio site in July 2022 to get feedback for a portfolio site prior to the completion of the same project in Angular for the web development course. I used React & React Bootstrap to get a quick feel of the layout and design of the site.',
     github: 'https://github.com/ettariley/jp-portfolio',
-    demo: 'https://ettariley.github.io/jp-portfolio/',
+    demo: 'http://www.ettahaselden.com',
   },
   {
     title: 'Chat',
@@ -59,7 +59,7 @@ const workInfo = [
     ],
     description: 'I made this project in February - March 2022 as my first vanilla JavaScript web application. It uses the Pokedex API to load the names and information for each Pokemon. This was also my first project using Bootstrap for styling.',
     github: 'https://github.com/ettariley/PokedexEtta',
-    demo: 'https://ettariley.github.io/PokedexEtta/',
+    demo: 'http://pokedex.ettahaselden.com',
   },
   {
     title: 'To Do List',
@@ -71,7 +71,7 @@ const workInfo = [
     ],
     description: 'This is a simple to do list app made in February 2022. While working on the vanilla JavaScript Pokedex app, I took a detour to refactor provided JavaScript for this app with jQuery.',
     github: 'https://github.com/ettariley/EttaToDoList',
-    demo: 'https://ettariley.github.io/EttaToDoList/',
+    demo: 'http://todolist.ettahaselden.com',
   },
   {
     title: 'Portfolio Site - Static Website',
@@ -84,7 +84,7 @@ const workInfo = [
     ],
     description: 'This was my first public project that I coded on my own! I made this in January 2022 as a test project. The about page even contains an animated SVG. The purpose of this project was to get familiar with HTML, CSS, & accessibility considerations.',
     github: 'https://github.com/ettariley/PortfolioSite',
-    demo: 'https://ettariley.github.io/PortfolioSite/index.html',
+    demo: 'http://portfolio1.ettahaselden.com',
   },
   {
     title: 'Live Free Website',
