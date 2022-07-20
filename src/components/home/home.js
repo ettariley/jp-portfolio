@@ -16,9 +16,9 @@ function Home() {
   return (
     <Fade in={open}>
       <Container className='home'>
-        <h1 className='p-3'>Hey! I'm Etta</h1>
+        <h1 className='p-3 text-center'>Hey! I'm Etta</h1>
         <Row className='justify-content-center'>
-          <Column lg='5' md='6'>
+          <Column lg='5' md='6' className='text-center'>
             <Image className='img-fluid' roundedCircle='true' src={require('../../assets/headshot.jpg')} />
           </Column>
           <Column lg='5' md='6'>

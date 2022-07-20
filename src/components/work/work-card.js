@@ -12,13 +12,13 @@ function WorkCard(props) {
     <Card className='work-card'>
       <Card.Img variant='top' src={work.screenshot} />
       <Card.Body>
-        <Card.Title>{work.title}</Card.Title>
-        <Card.Subtitle>{work.tagline}</Card.Subtitle>
-        <Card.Text className='m-0 fs-5 pt-2'>Technologies:</Card.Text>
+        <Card.Title className='text-center'>{work.title}</Card.Title>
+        <Card.Subtitle className='text-center'>{work.tagline}</Card.Subtitle>
+        <Card.Text className='tech m-0 fs-6 pt-3'>Technologies:</Card.Text>
         <Card.Text>{techList}</Card.Text>
         <Card.Text>{work.description}</Card.Text>
       </Card.Body>
-      <Card.Body>
+      <Card.Body className='text-center'>
         {work.github ? (
           <Button variant="primary" className='work-btn m-2' href={work.github} target="_blank">Code</Button>
         ) : null}
