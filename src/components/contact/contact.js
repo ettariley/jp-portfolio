@@ -82,11 +82,11 @@ function Contact() {
             <Form ref={form} onSubmit={sendEmail}>
               <Form.Group className="mb-3" controlId="contactFormName">
                 <Form.Label>Name</Form.Label>
-                <Form.Control placeholder="Your Name" required />
+                <Form.Control placeholder="Your Name" name='name' required />
               </Form.Group>
               <Form.Group className="mb-3" controlId="contactFormEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Your Email" required />
+                <Form.Control type="email" placeholder="Your Email" name='email' required />
               </Form.Group>
               <Form.Group className="mb-3" controlId="contactFormMessage">
                 <Form.Label>Message</Form.Label>
@@ -95,6 +95,7 @@ function Contact() {
                   placeholder="Your Message"
                   rows={3}
                   required
+                  name='message'
                 />
               </Form.Group>
               <Button
