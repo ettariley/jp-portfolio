@@ -8,7 +8,7 @@ const workInfo = [
       ' React Bootstrap',
       ' Github & Github Pages',
     ],
-    description: "I created this portfolio site in July 2022. It's my first complete, public website from scratch! With this site, I dove deeper into customizing bootstrap.",
+    description: "I created this portfolio site in July 2022. It's my first complete, public website from scratch! With this site, I dove deeper into customizing Bootstrap.",
     github: 'https://github.com/ettariley/jp-portfolio',
   },
   {
