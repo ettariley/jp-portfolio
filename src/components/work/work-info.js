@@ -1,6 +1,6 @@
 const workInfo = [
   {
-    title: 'Portfolio Site - React',
+    title: 'Portfolio Site',
     screenshot: require('../../assets/JP_Portfolio_Screenshot.png'),
     tagline: 'Practice React Web App',
     technologies: [
@@ -8,9 +8,8 @@ const workInfo = [
       ' React Bootstrap',
       ' Github & Github Pages',
     ],
-    description: 'I created this portfolio site in July 2022 to get feedback for a portfolio site prior to the completion of the same project in Angular for the web development course. I used React & React Bootstrap to get a quick feel of the layout and design of the site.',
+    description: "I created this portfolio site in July 2022. It's my first complete, public website from scratch! With this site, I dove deeper into customizing bootstrap.",
     github: 'https://github.com/ettariley/jp-portfolio',
-    demo: 'http://www.ettahaselden.com',
   },
   {
     title: 'Chat',
