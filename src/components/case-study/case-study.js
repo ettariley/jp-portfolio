@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Fade from 'react-bootstrap/Fade';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -75,7 +76,8 @@ function CaseStudy() {
         </Row>
         <Row className='pb-4 justify-content-center'>
           <Column md='4' className='text-center'>
-            <Button variant='secondary' href='/work'>Back to All Projects</Button>
+            <Link className="btn btn-secondary" to="/work">Back to All Projects</Link>
+            {/* <Button variant='secondary' href='/work'>Back to All Projects</Button> */}
           </Column>
         </Row>
       </Container>
