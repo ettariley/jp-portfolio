@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 import Fade from 'react-bootstrap/Fade';
 import Container from 'react-bootstrap/Container';
 import Column from 'react-bootstrap/Col';
@@ -25,10 +25,12 @@ function Contact() {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     setOpen(true);
   });
 
   useEffect(() => {
+    console.log(state);
     if (state.succeeded) {
       setShowModal(true);
     }
@@ -63,17 +65,17 @@ function Contact() {
               <Form.Group className="mb-3" controlId="contactFormName">
                 <Form.Label>Name</Form.Label>
                 <Form.Control placeholder="Your Name" required />
-                <ValidationError prefix="Name" field="name" errors={state.errors} />
+                {/* <ValidationError prefix="Name" field="name" errors={state.errors} /> */}
               </Form.Group>
               <Form.Group className="mb-3" controlId="contactFormEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control type="email" placeholder="Your Email" required />
-                <ValidationError prefix="Email" field="email" errors={state.errors} />
+                {/* <ValidationError prefix="Email" field="email" errors={state.errors} /> */}
               </Form.Group>
               <Form.Group className="mb-3" controlId="contactFormMessage">
                 <Form.Label>Message</Form.Label>
                 <Form.Control as="textarea" placeholder="Your Message" rows={3} required />
-                <ValidationError prefix="Message" field="message" errors={state.errors} />
+                {/* <ValidationError prefix="Message" field="message" errors={state.errors} /> */}
               </Form.Group>
             </Form>
             <Button variant="primary contact-btn" type="submit" disabled={state.submitting}>
