@@ -20,6 +20,10 @@ function Contact() {
 //   }
 //  };
 
+  if (state.succeeded) {
+      setShowModal(true);
+  };
+
   const hideContactSubmittedModal = () => {
     setShowModal(false);
   };
@@ -29,12 +33,12 @@ function Contact() {
     setOpen(true);
   });
 
-  useEffect(() => {
-    console.log(state);
-    if (state.succeeded) {
-      setShowModal(true);
-    }
-  }, [state])
+  // useEffect(() => {
+  //   console.log(state);
+  //   if (state.succeeded) {
+  //     setShowModal(true);
+  //   }
+  // }, [state])
 
   return (
     <Fade in={open}>
