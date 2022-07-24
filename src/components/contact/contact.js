@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { useForm } from '@formspree/react';
+import React, { useEffect, useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import Fade from 'react-bootstrap/Fade';
 import Container from 'react-bootstrap/Container';
 import Column from 'react-bootstrap/Col';
@@ -12,37 +12,31 @@ import './contact.css';
 function Contact() {
   const [showModal, setShowModal] = useState(false);
   const [open, setOpen] = useState(false);
-  const [state, handleSubmit] = useForm('xoqrgple');
+  const form = useRef();
 
-  //  const showContactSubmittedModal = () => {
-  //   if (state.succeeded) {
-  //     setShowModal(true);
-  //   }
-  //  };
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  if (state.succeeded) {
-    setShowModal(true);
-  }
+    emailjs.sendForm('service_wytpob4', 'template_g9yryew', form.current, 'a0vvx7p6RtzyJSiRO')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+  const showContactSubmittedModal = () => {
+      setShowModal(true);
+   };
 
   const hideContactSubmittedModal = () => {
     setShowModal(false);
-  };
-
-  const readState = () => {
-    console.log(state);
   };
 
   useEffect(() => {
     window.scrollTo(0, 0);
     setOpen(true);
   });
-
-  // useEffect(() => {
-  //   console.log(state);
-  //   if (state.succeeded) {
-  //     setShowModal(true);
-  //   }
-  // }, [state])
 
   return (
     <Fade in={open}>
@@ -85,16 +79,14 @@ function Contact() {
 
           {/* Contact form */}
           <Column md="6" className="contact-form pt-3 pb-4 ps-4 pe-4">
-            <Form method='POST' onSubmit={handleSubmit}>
+            <Form ref={form} onSubmit={sendEmail}>
               <Form.Group className="mb-3" controlId="contactFormName">
                 <Form.Label>Name</Form.Label>
                 <Form.Control placeholder="Your Name" required />
-                {/* <ValidationError prefix="Name" field="name" errors={state.errors} /> */}
               </Form.Group>
               <Form.Group className="mb-3" controlId="contactFormEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control type="email" placeholder="Your Email" required />
-                {/* <ValidationError prefix="Email" field="email" errors={state.errors} /> */}
               </Form.Group>
               <Form.Group className="mb-3" controlId="contactFormMessage">
                 <Form.Label>Message</Form.Label>
@@ -104,13 +96,11 @@ function Contact() {
                   rows={3}
                   required
                 />
-                {/* <ValidationError prefix="Message" field="message" errors={state.errors} /> */}
               </Form.Group>
               <Button
                 variant="primary contact-btn"
                 type="submit"
-                disabled={state.submitting}
-                onClick={readState}
+                onClick={showContactSubmittedModal}
               >
                 Submit
               </Button>
