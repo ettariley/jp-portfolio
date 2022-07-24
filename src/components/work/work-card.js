@@ -31,7 +31,6 @@ function WorkCard(props) {
         ) : null}
         {work.caseStudy ? (
           <Link className="btn btn-primary m-2" to="/case-study">Case Study</Link>
-          // <Button variant="primary" className='work-btn m-2' href='case-study'>Case Study</Button>
         ) : null}
       </Card.Body>
     </Card>    
