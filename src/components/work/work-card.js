@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 import './work.css';
 
 function WorkCard(props) {
@@ -29,7 +30,8 @@ function WorkCard(props) {
           <Button variant="primary" className='work-btn m-2' href={work.liveSite} target="_blank">Website</Button>
         ) : null}
         {work.caseStudy ? (
-          <Button variant="primary" className='work-btn m-2' href='case-study'>Case Study</Button>
+          <Link className="btn btn-primary m-2" to="case-study">Case Study</Link>
+          // <Button variant="primary" className='work-btn m-2' href='case-study'>Case Study</Button>
         ) : null}
       </Card.Body>
     </Card>    
