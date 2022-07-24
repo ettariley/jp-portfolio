@@ -12,6 +12,7 @@ function Work() {
   let work = workInfo;
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     setOpen(true);
   });
 

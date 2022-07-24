@@ -10,6 +10,7 @@ function Home() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     setOpen(true);
   });
 
