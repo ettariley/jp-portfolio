@@ -18,7 +18,7 @@ function Home() {
       <Container className='home'>
         <h1 className='p-3 text-center'>Hey! I'm Etta</h1>
         <Row className='justify-content-center'>
-          <Column lg='5' md='6' className='text-center pb-1'>
+          <Column lg='5' md='6' className='text-center pb-2'>
             <Image className='img-fluid' roundedCircle='true' src={require('../../assets/headshot.jpg')} />
           </Column>
           <Column lg='5' md='6'>
@@ -28,7 +28,7 @@ function Home() {
             <p>Interested? Check out my GitHub, LinkedIn, or Resume below. See my work, learn more about me, or contact me at the links above.</p>              
           </Column>
         </Row>
-        <Row className='justify-content-center home-icons'>
+        <Row className='justify-content-center home-icons pb-2'>
           <Column xs='auto'>
             <a href='https://github.com/ettariley' title='My Github' target="_blank"><i className="bi bi-github hi"></i></a>
           </Column>

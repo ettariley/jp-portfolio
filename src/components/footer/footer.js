@@ -25,8 +25,8 @@ function Footer() {
           <a href='https://www.linkedin.com/in/etta-r-baker/' title='My LinkedIn' target="_blank"><i className="bi fi bi-linkedin h2"></i></a>
         </Column>
       </Row>
-      <Row className='pb-1'>
-        <p className='fs-6'>Designed and developed by Me!</p>
+      <Row>
+        <p className='fs-6'>Designed and developed by me!</p>
       </Row>
     </Container>
   );
