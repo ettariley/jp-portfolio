@@ -21,10 +21,12 @@
 
 .form-control {
   background-color: white;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .form-control:focus {
   background-color: white;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .contact-btn:hover {
