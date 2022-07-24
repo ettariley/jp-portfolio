@@ -106,15 +106,15 @@ function Contact() {
                 />
                 {/* <ValidationError prefix="Message" field="message" errors={state.errors} /> */}
               </Form.Group>
+              <Button
+                variant="primary contact-btn"
+                type="submit"
+                disabled={state.submitting}
+                onClick={readState}
+              >
+                Submit
+              </Button>
             </Form>
-            <Button
-              variant="primary contact-btn"
-              type="submit"
-              disabled={state.submitting}
-              onClick={readState}
-            >
-              Submit
-            </Button>
           </Column>
         </Row>
 
