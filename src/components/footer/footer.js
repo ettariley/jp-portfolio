@@ -26,7 +26,7 @@ function Footer() {
         </Column>
       </Row>
       <Row className='pb-1'>
-        <h6>Designed and developed by Me!</h6>
+        <p className='fs-6'>Designed and developed by Me!</p>
       </Row>
     </Container>
   );

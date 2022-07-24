@@ -29,7 +29,7 @@ function Contact() {
       <Container className='contact'>
         <h2 className='pt-3 text-center'>Contact Me</h2>
         <p className='pb-3 fs-5 text-center'>Think we would work well together? Let me know!</p>
-        <Row>
+        <Row className='pb-2'>
           {/* Contact deatils */}
           <Column md='6' lg='5' className='ms-auto'>
             <Row>
