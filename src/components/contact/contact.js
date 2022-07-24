@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useForm } from '@formspree/react';
 import Fade from 'react-bootstrap/Fade';
 import Container from 'react-bootstrap/Container';
 import Column from 'react-bootstrap/Col';
@@ -11,9 +12,12 @@ import './contact.css';
 function Contact() {
  const [showModal, setShowModal] = useState(false);
  const [open, setOpen] = useState(false);
+ const [state, handleSubmit] = useForm("xoqrgple");
 
  const showContactSubmittedModal = () => {
-  setShowModal(true);
+  if (state.succeeded) {
+    setShowModal(true);
+  }
  };
 
   const hideContactSubmittedModal = () => {
@@ -49,21 +53,21 @@ function Contact() {
 
           {/* Contact form */}
           <Column md='6' className='contact-form pt-3 pb-4 ps-4 pe-4'>
-            <Form>
+            <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="contactFormName">
                 <Form.Label>Name</Form.Label>
-                <Form.Control placeholder="Your Name"/>
+                <Form.Control placeholder="Your Name" required />
               </Form.Group>
               <Form.Group className="mb-3" controlId="contactFormEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Your Email" />
+                <Form.Control type="email" placeholder="Your Email" required />
               </Form.Group>
               <Form.Group className="mb-3" controlId="contactFormMessage">
                 <Form.Label>Message</Form.Label>
-                <Form.Control as="textarea" placeholder="Your Message" rows={3} />
+                <Form.Control as="textarea" placeholder="Your Message" rows={3} required />
               </Form.Group>
             </Form>
-            <Button variant="primary contact-btn" type="submit" onClick={showContactSubmittedModal}>
+            <Button variant="primary contact-btn" type="submit" onClick={showContactSubmittedModal} disabled={state.submitting}>
               Submit
             </Button>
           </Column>
