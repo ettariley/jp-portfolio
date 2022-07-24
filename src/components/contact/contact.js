@@ -85,7 +85,7 @@ function Contact() {
 
           {/* Contact form */}
           <Column md="6" className="contact-form pt-3 pb-4 ps-4 pe-4">
-            <Form method="POST" onSubmit={handleSubmit}>
+            <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="contactFormName">
                 <Form.Label>Name</Form.Label>
                 <Form.Control placeholder="Your Name" required />
