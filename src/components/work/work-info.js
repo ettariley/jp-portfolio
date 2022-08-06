@@ -1,8 +1,21 @@
 const workInfo = [
   {
+    title: 'myFlix',
+    screenshot: require('../../assets/myFlix_Screenshot.png'),
+    tagline: 'Angular App',
+    technologies: [
+      'Angular',
+      ' TypeScript',
+      ' Angular Material',
+    ],
+    description: "I created this Angular project in July & August 2022. The purpose of this project was to get familiar with TypeScript & Angular, so I redesigned the movie app (EMDB).",
+    github: 'https://github.com/ettariley/myFlix-Angular-client',
+    demo: 'http://myFlix.ettahaselden.com',
+  },
+  {
     title: 'Portfolio Site',
     screenshot: require('../../assets/JP_Portfolio_Screenshot.png'),
-    tagline: 'Practice React Web App',
+    tagline: 'React Web App',
     technologies: [
       'React',
       ' React Bootstrap',
