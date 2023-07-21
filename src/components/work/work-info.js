@@ -1,5 +1,29 @@
 const workInfo = [
   {
+    title: 'Hamblen Resource Guide',
+    screenshot: require('../../assets/HRG_Portfolio_Screenshot.png'),
+    tagline: 'PWA with Admin Page',
+    technologies: [
+      'React',
+      ' Bootstrap',
+      ' Google Firebase',
+    ],
+    description: "This grant-funded project is a website of community resources and events. Developed from June 2022 - March 2023, this project includes an admin page where resources and events can be added and edited, as well as other parts of the site.",
+    github: 'https://github.com/ettariley/Resource-Guide',
+    liveSite: 'https://hamblenresourceguide.org/',
+  },{
+    title: 'Holiday Hope Fund Website',
+    screenshot: require('../../assets/HHF_Portfolio_Screenshot.png'),
+    tagline: 'Christmas Site with PayPal Integration',
+    technologies: [
+      'React',
+      ' PayPal Javascript SDK',
+      ' AWS Amplify',
+    ],
+    description: "I made this website in November 2022 to as a volunteer project to share information facilitate donations to the Holiday Hope Fund program. For this project, I wanted an online shopping experince for food and toy donations but had to use the donation PayPal functions to process the payment, making the design and implementation a bit trickier than regular PayPal checkouts.",
+    github: 'https://github.com/ettariley/holiday-hope-fund',
+    liveSite: 'https://holidayhopefund.org/',
+  },{
     title: 'myFlix',
     screenshot: require('../../assets/myFlix_Screenshot.png'),
     tagline: 'Angular App',
