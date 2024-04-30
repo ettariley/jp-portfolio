@@ -47,7 +47,7 @@ function Contact() {
         </p>
         <Row className="pb-2">
           {/* Contact deatils */}
-          <Column md="6" lg="5" className="ms-auto">
+          <Column md="6" lg="5" className="ms-auto me-auto">
             <Row>
               <p className="fs-5">
                 <i className="bi bi-geo-alt-fill ci"></i> Bristol, TN Area or
@@ -78,7 +78,7 @@ function Contact() {
           </Column>
 
           {/* Contact form */}
-          <Column md="6" className="contact-form pt-3 pb-4 ps-4 pe-4">
+          {/* <Column md="6" className="contact-form pt-3 pb-4 ps-4 pe-4">
             <Form ref={form} onSubmit={sendEmail}>
               <Form.Group className="mb-3" controlId="contactFormName">
                 <Form.Label>Name</Form.Label>
@@ -106,7 +106,7 @@ function Contact() {
                 Submit
               </Button>
             </Form>
-          </Column>
+          </Column> */}
         </Row>
 
         {showModal ? (
